@@ -8,27 +8,44 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - chitchat
+  - faq
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "嘿！你好嗎？"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "這會讓您振作起來："
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "對您有幫助嗎？"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "太好了，繼續前進！"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "再見"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "我是由Rasa驅動的機器人。"
 
+  utter_chitchat/ask_name:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: Hello, 您好，我叫Retreval Bot。
+  - text: 您好，我叫Retreval Bot。
+  
+  utter_chitchat/ask_weather:
+  - text: 哦，台北現在確實很晴朗。
+    image: "https://i.imgur.com/vwv7aHN.png"
+  - text: 我不確定整個星期如何，但我可以看到今天太陽下山了。
+  
+  utter_faq:
+  - text: 你需要幫助嗎？
+
+  utter_chitchat:
+    - text: "我們來聊天"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

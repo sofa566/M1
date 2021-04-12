@@ -3,6 +3,9 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
+    - '嗨'
+    - '哈囉'
+    - '嘿'
     - hey
     - hello
     - hi
@@ -19,6 +22,13 @@ nlu:
 
 - intent: goodbye
   examples: |
+    - 下午好
+    - 午安
+    - 再見
+    - 待會兒見
+    - 晚安
+    - 祝你今天過得愉快
+    - 回頭見
     - good afternoon
     - cu
     - good by
@@ -33,6 +43,11 @@ nlu:
 
 - intent: affirm
   examples: |
+    - 是的
+    - 的確
+    - 當然
+    - 聽起來很好
+    - 正確的
     - yes
     - y
     - indeed
@@ -42,6 +57,13 @@ nlu:
 
 - intent: deny
   examples: |
+    - 不
+    - 沒
+    - 絕不
+    - 我不這麼認為
+    - 不喜歡
+    - 決不
+    - 並不是地
     - no
     - n
     - never
@@ -52,6 +74,17 @@ nlu:
 
 - intent: mood_great
   examples: |
+    - 偉大的
+    - 完美的
+    - 驚人的
+    - 精彩的
+    - 我感覺很好
+    - 我很好
+    - 我很棒
+    - 超級好
+    - 太完美了
+    - 超好的
+    - 非常完美
     - perfect
     - great
     - amazing
@@ -69,6 +102,20 @@ nlu:
 
 - intent: mood_unhappy
   examples: |
+    - 我的日子太糟糕了
+    - 我很傷心
+    - 我不太舒服
+    - 我很失望
+    - 超級難過
+    - 我很難過
+    - 傷心
+    - 很傷心
+    - 不開心
+    - 不好
+    - 不太好
+    - 極度傷心
+    - 很傷心
+    - 好難過
     - my day was horrible
     - I am sad
     - I don't feel very well
@@ -86,7 +133,37 @@ nlu:
 
 - intent: bot_challenge
   examples: |
+    - 你是機器人嗎？
+    - 你是人嗎？
+    - 我在和機器人聊天嗎？
+    - 我在和人說話嗎？
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: chitchat/ask_name
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+    - 你叫什麼名字？
+    - 我能知道你的名字嗎？
+    - 大家叫你什麼？
+    - 你有自己的名字嗎？
+- intent: chitchat/ask_weather
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+    - 今天天氣如何？
+    - 今天外面天氣晴朗嗎？
+    - 噢，你介意為我檢查天氣嗎？
+    - 我喜歡柏林的晴天。
+- intent: faq
+  examples: |
+    - 我想問問題
+    - 你能給我幫忙嗎？
+    - 我須要幫忙
